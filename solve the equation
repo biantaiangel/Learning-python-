@@ -1,0 +1,23 @@
+import math
+print "Input 'a b c' for equation ax^2+bx+c=0"
+a=input()
+b=input()
+c=input()
+d=b*b-4*a*c
+while a==0 or d<0:
+
+   print  "%.2f!no result!"%d
+   
+   print "Error please input again!"
+   a=input()
+   b=input()
+   c=input()
+   d=b*b-4*a*c
+
+
+
+z=math.sqrt(d)
+x1=(b+z)/2/a
+x2=(b-z)/2/a
+
+print "result is %.2f and %.2f" %(x1,x2)
